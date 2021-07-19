@@ -1,0 +1,46 @@
+/******** FONT ********/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/******** BODY ********/
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+/******** HEADER *********/
+header{ /*Mise en place de la Flexbox Header*/
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/********MENU*********/
+nav > ul > li{ /*Allignement*/
+    position: relative;
+    float: left;
+  }
+
+nav li{  /*Enlever les puces et créer un écart*/
+    list-style-type: none;
+    padding: 30px;
+  }
+
+nav a{  /*Neutralise le menu*/
+    display: inline-block;
+	text-decoration: none;
+	color: black;
+}
+
+.inscription{ /*Couleur du bouton S'inscire*/
+    color: #0065FC;
+    font-weight: bold;
+}
+
+nav > ul > li:hover{ /*Effets au survol*/
+    border-top: #0065FC 2px solid;
+}
+
+nav a:hover{
+    color: #0065FC;
+}
