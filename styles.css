@@ -20,6 +20,7 @@ body{
 
 /********LOGO********/
 #logo{
+    margin-left: 20px;
     padding: 30px;
     padding-bottom: 20px;
     flex: 1;
@@ -27,7 +28,7 @@ body{
 
 /********MENU*********/
 #menu{
-    display: block;
+    display: inline-block;
 }
 #menu ul{
     display: flex;
@@ -61,7 +62,7 @@ body{
 
 /******** TITRE ********/
 .titre{
-    margin-left: 30px;
+    margin-left: 50px;
 }
 h1{
     font-size: 18px;
@@ -72,9 +73,52 @@ p{
     padding: 0px;
 }
 
+/******** RECHERCHE ********/
+#recherche{
+    align-items: baseline;
+}
+.fa-map-marker-alt{ /*Propriété Icons localisation*/
+    color: black;
+    background-color: #f2f2f2;
+    padding: 15px;
+    padding-top: 14px;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px 0px 0px 15px;
+}
+.search{ /*Propiété zone de recherche*/
+    font-weight: bold;
+    color: black;
+    padding: 15px;
+    border: 1px solid #f2f2f2;
+}
+.buttonsearch{ /*Propriété du boutton rechecrcher*/
+    color: white; 
+    font-weight: bold;
+    padding: 15px;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+.iconsearch{
+    display: none;
+    border-style: none;
+    background-color: transparent;
+}
+.fa-search{
+    color: white;
+    padding: 15px;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 15px;
+
+}
+
+
+
 /******** FOOTER ********/
 #footer{
     background-color: #f2f2f2;
+    margin-top: 20px;
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -134,7 +178,7 @@ h4{
         border-bottom: 2px #f2f2f2 solid;
     }
     #menu li{ /*Mise ne place du menu*/
-        display: flex;
+        display: flex-start;
         justify-content: center;
         align-items: baseline;
         width: 100%;
@@ -142,6 +186,15 @@ h4{
     }
     #menu li:hover{ /*Effet au survol*/
         border-bottom: 2px #0065FC solid;
+    }
+
+    /******** SECTION TITRE ********/
+    .buttonsearch{
+        display: none;
+    }
+    .iconsearch{
+        display: inline-block;
+        margin-left: -20px;
     }
 
     /******** FOOTER *******/
@@ -194,6 +247,15 @@ h4{
     }
     #menu li:hover{ /*Effet au survol*/
         border-bottom: 2px #0065FC solid;
+    }
+
+    /******** SECTION TITRE ********/
+    .buttonsearch{
+        display: none;
+    }
+    .iconsearch{
+        display: inline-block;
+        margin-left: -20px;
     }
 
     /******** FOOTER *******/
