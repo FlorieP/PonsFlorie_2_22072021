@@ -21,6 +21,7 @@ body{
 /********LOGO********/
 #logo{
     padding: 30px;
+    padding-bottom: 20px;
     flex: 1;
 }
 
@@ -37,6 +38,7 @@ body{
     float: left;
     list-style-type: none;
     padding: 30px;
+    padding-bottom: 20px;
   }
 #menu a{  
     display: inline-block;
@@ -51,11 +53,24 @@ body{
 #inscription a{
     display: inline-block;
 	text-decoration: none;
-    padding: 44px;
+    padding: 30px;
+    padding-top: 40px;
     color: #0065FC;
     font-weight: bold;
 }
 
+/******** TITRE ********/
+.titre{
+    margin-left: 30px;
+}
+h1{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px; 
+}
+p{
+    padding: 0px;
+}
 
 /******** FOOTER ********/
 #footer{
@@ -100,6 +115,7 @@ h4{
     }
     #logo{ 
         order: 1;
+        padding-bottom: 5px;
     }
     #inscription{ 
         order: 2;
@@ -122,6 +138,7 @@ h4{
         justify-content: center;
         align-items: baseline;
         width: 100%;
+        padding-top: 5px;
     }
     #menu li:hover{ /*Effet au survol*/
         border-bottom: 2px #0065FC solid;
@@ -151,6 +168,7 @@ h4{
     }
     #logo{ 
         order: 1;
+        padding-bottom: 5px;
     }
     #inscription{ 
         order: 2;
@@ -159,7 +177,6 @@ h4{
         top: 8px;
         right: 20px;
         font-size: 16px;
-
     }
     #menu{ 
         order: 3;
@@ -173,6 +190,7 @@ h4{
         justify-content: center;
         align-items: baseline;
         width: 100%;
+        padding-top: 5px;
     }
     #menu li:hover{ /*Effet au survol*/
         border-bottom: 2px #0065FC solid;
