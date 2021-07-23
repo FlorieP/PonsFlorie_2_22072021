@@ -61,23 +61,15 @@ p{
 .filtres{
     margin-left: 50px;
     display: flex;
+    justify-content: flex-start;
+    align-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 h2{
-    margin-right: 40px;
+    margin-right: 20px;
 }
-.filtres ul{
-    display: flex;
-    justify-content: flex-start;
-    align-content: space-between;
-    flex-wrap: wrap;
-}
-.filtres li{
-    display: list-item;
-    list-style-type: none;
-    margin-right: 65px;
-}
+
 .filtres a{  
 	text-decoration: none;
 	color: black;
@@ -85,34 +77,14 @@ h2{
 }
 
 /* Propriété des filtres et icons*/
-.filtre-économique{ 
+.filtre-name{ 
     padding-right: 20px;
     background-color: transparent;
     border: 2px solid #f2f2f2;
     border-radius: 30px;
-    margin-left: -45px;
+    margin-right: 20px;
 }
-.filtre-familial{
-    padding-right: 20px;
-    background-color: transparent;
-    border: 2px solid #f2f2f2;
-    border-radius: 30px;
-    margin-left: -45px;
-}
-.filtre-romantique{
-    padding-right: 20px;
-    background-color: transparent;
-    border: 2px solid #f2f2f2;
-    border-radius: 30px;
-    margin-left: -45px;
-}
-.filtre-animaux{
-    padding-right: 20px;
-    background-color: transparent;
-    border: 2px solid #f2f2f2;
-    border-radius: 30px;
-    margin-left: -45px;
-}
+
 .fa-money-bill-wave{
     color: #0065FC;
     background-color: #DEEBFF;
@@ -154,7 +126,7 @@ h2{
     border-radius: 50%;
 }
 
-.filtres li:hover{ /*Effet au survol des filtres*/
+.filtre-name:hover{ /*Effet au survol des filtres*/
     box-shadow: inset 200px 0 0 0 #f2f2f2;
     border: 2px solid #DEEBFF;
     transition: ease-out 0.4s;
@@ -216,7 +188,7 @@ h2{
     }
 
         /******** FILTRE ********/
-        .filtres li{
+        .filtre-name{
             margin-bottom: 10px;
         }
 }
