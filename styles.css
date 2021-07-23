@@ -1,70 +1,7 @@
-/******** FONT ********/
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/******** IMPORT CSS ********/
+@import 'header.css'; 
+@import 'footer.css';
 
-/******** BODY ********/
-body{
-    margin: 0px;
-    padding: 0px;
-    max-width: 100%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-}
-
-/******** HEADER *********/
-#header{ /*Mise en place de la Flexbox Header*/
-    width: 100%; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/********LOGO********/
-#logo{
-    margin-left: 20px;
-    padding: 30px;
-    padding-bottom: 20px;
-    flex: 1;
-}
-
-/********MENU*********/
-#menu{
-    display: inline-block;
-}
-#menu ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-inline-start: 0px;
-}
-#menu li{ 
-    position: relative;
-    float: left;
-    padding: 30px;
-    list-style-type: none;
-    text-align: center;
-    padding-bottom: 20px;
-
-  }
-#menu a{  
-   /* display: inline-block;*/
-	text-decoration: none;
-	color: black;
-    width: 100%;
-    
-}
-#menu a:hover{ /*Effet au survol fixe*/
-    color: #0065FC;
-}
-
-/********INSCRIPTION********/
-#inscription a{
-    display: inline-block;
-	text-decoration: none;
-    padding: 30px;
-    padding-top: 40px;
-    color: #0065FC;
-    font-weight: bold;
-}
 
 /******** TITRE ********/
 .titre{
@@ -240,30 +177,6 @@ h2{
     display: inline-block;
 }
 
-/******** FOOTER ********/
-#footer{
-    background-color: #f2f2f2;
-    margin-top: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline; 
-}
-
-#footer li{
-    list-style-type: none;
-    margin-top: 5px;
-    
-}
-
-.basdepage{
-    padding-right: 15%;
-}
-
-h4{
-    font-weight: bold;
-}
 
 
 
@@ -274,44 +187,6 @@ h4{
     body{
         max-width: 100%;
     }
-    /********* HEADER ********/    
-    #header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
-        width: auto;
-    }
-    #logo{ 
-        order: 1;
-        padding-bottom: 5px;
-    }
-    #inscription{ 
-        order: 2;
-        position: absolute;
-        width: auto;
-        top: 8px;
-        right: 20px;
-        font-size: 16px;
-    }
-    #menu{ 
-        order: 3;
-        width: 100%;
-    }
-    #menu ul{ /*Soulignement du menu*/
-        border-bottom: 2px #f2f2f2 solid;
-    }
-    #menu li{ /*Mise ne place du menu*/
-        display: flex-start;
-        justify-content: center;
-        align-items: baseline;
-        width: 100%;
-        padding-top: 5px;
-    }
-    #menu li:hover{ /*Effet au survol*/
-        border-bottom: 2px #0065FC solid;
-    }
-
     /******** TITRE ********/
     .buttonsearch{
         display: none;
@@ -325,59 +200,12 @@ h4{
     .filtres li{
         margin-bottom: 10px;
     }
-
-    /******** FOOTER *******/
-    #footer{
-        display: flex;
-        flex-direction: column;
-    }
 }
-
-
 
 @media screen and (min-width: 768px) and (max-width: 959px){ /*Ecran de tablette*/
     body{
         max-width: 100%;
-
-    /********* HEADER ********/    
     }
-    #header{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: baseline;
-        width: auto;
-    }
-    #logo{ 
-        order: 1;
-        padding-bottom: 5px;
-    }
-    #inscription{ 
-        order: 2;
-        position: absolute;
-        width: auto;
-        top: 8px;
-        right: 20px;
-        font-size: 16px;
-    }
-    #menu{ 
-        order: 3;
-        width: 100%;
-    }
-    #menu ul{ /*Soulignement du menu*/
-        border-bottom: 2px #f2f2f2 solid;
-    }
-    #menu li{ /*Mise ne place du menu*/
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-        width: 100%;
-        padding-top: 5px;
-    }
-    #menu li:hover{ /*Effet au survol*/
-        border-bottom: 2px #0065FC solid;
-    }
-
     /******** TITRE ********/
     .buttonsearch{
         display: none;
@@ -387,25 +215,16 @@ h4{
         margin-left: -20px;
     }
 
-    /******** FOOTER *******/
-    #footer{
-        display: flex;
-        flex-direction: column;
-    }
+        /******** FILTRE ********/
+        .filtres li{
+            margin-bottom: 10px;
+        }
 }
 
 @media screen and (min-width: 960px) and (max-width: 1599px){ /*Ecran de tablette paysage & PC*/
 
-    /******** HEADER *******/
-    #menu li:hover{ 
-    border-top: #0065FC 2px solid;
-    }
 }
 
 @media screen and (min-width: 1599px){ /*Ecran PC large*/
 
-  /******** HEADER *******/
-    #menu li:hover{ 
-        border-top: #0065FC 2px solid;
-    }
 }
