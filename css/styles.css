@@ -139,10 +139,12 @@ button {
     margin-left: 20px;
 }
 #hebergements .show-more{
-    margin-left: 20px;
-    padding-top: 25px;
+    padding: 25px;
     font-weight: bold;
     font-size: 16px;
+}
+h3{
+    margin-bottom: 5px;
 }
 
 /******** ARTICLE HERBERGEMENTS ********/
@@ -170,24 +172,33 @@ button {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
     height: auto;
     line-height: 25px;
-    margin: 10px;
+    margin: 20px;
 }
 .img-hosting img{
     width: 16vw;
-    height: 8vw;
+    height: 6vw;
     border-radius: 15px 15px 0px 0px;
     padding: 5px 5px 0px 5px;
     object-fit: cover;
 }
+.hosting-marseille p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
 
 /******** ASIDE HERBERGEMENTS ********/
+.fa-chart-line{
+    position: absolute;
+    right: 4%;
+    font-size: 20px;
+}
 .popular-hosting{
     background-color: #f2f2f2;
     border-radius: 15px;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex: 1;
 }
 .hosting-pop{
@@ -201,8 +212,8 @@ button {
     border-radius: 15px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
     height: auto;
-    line-height: 25px;
-    margin: 10px;
+    line-height: 20px;
+    margin: 18px;
 }
 .img-hosting-pop img{
     width: 8vw;
@@ -215,7 +226,19 @@ button {
 /******** DESCRIPTION HEBERGEMENTS ********/
 .description-hosting{
     margin-left: 15px;
-    line-height:  5px;
+    line-height:  15px;
+}
+.hosting-marseille .description-hosting{
+    margin-bottom: 5px;
+}
+.popular-hosting .description-hosting{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price{
+    margin-top: 0px;
+    margin-bottom: 35px;
 }
 
 /******** ETOILES ********/
