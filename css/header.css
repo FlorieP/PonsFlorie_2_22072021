@@ -1,17 +1,5 @@
-/******** FONT ********/
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-/******** BODY ********/
-body{
-    margin: 0px;
-    padding: 0px;
-    max-width: 100%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-}
-
 /******** HEADER *********/
-#header{ /*Mise en place de la Flexbox Header*/
+header{ /*Mise en place de la Flexbox Header*/
     width: 100%; 
     display: flex;
     justify-content: space-between;
