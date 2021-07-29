@@ -66,8 +66,9 @@ body{
     font-weight: bold;
 }
 
-/******** RESPONSIVE ********/
-@media screen and (max-width: 767px){ /*Ecran de mobile*/
+/******************** RESPONSIVE ********************/
+/******** MOBILE ********/
+@media screen and (max-width: 767px){
     body{
         max-width: 100%;
     }
@@ -110,7 +111,8 @@ body{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 959px){ /*Ecran de tablette*/
+/******** TABLETTE ********/
+@media screen and (min-width: 768px) and (max-width: 1124px){
     body{
         max-width: 100%;
 
@@ -154,15 +156,16 @@ body{
     }
 }
 
-@media screen and (min-width: 960px) and (max-width: 1599px){ /*Ecran de tablette paysage & PC*/
-
+/******** TABLETTE PAYSAGE & PC ********/
+@media screen and (min-width: 1125px) and (max-width: 1599px){ 
     /******** HEADER *******/
     #menu li:hover{ 
     border-top: #0065FC 2px solid;
     }
 }
 
-@media screen and (min-width: 1599px){ /*Ecran PC large*/
+/******** PC LARGE ********/
+@media screen and (min-width: 1599px){
 
   /******** HEADER *******/
     #menu li:hover{ 

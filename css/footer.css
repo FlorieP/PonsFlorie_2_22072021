@@ -32,9 +32,9 @@ h4{
     font-weight: bold;
 }
 
-/********* RESPONSIVE ********/
-
-@media screen and (max-width: 767px){ /*Ecran de mobile*/
+/********************* RESPONSIVE ********************/
+/******** MOBILE ********/
+@media screen and (max-width: 767px){
     /******** FOOTER *******/
     #footer{
         display: flex;
@@ -42,7 +42,8 @@ h4{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 959px){ /*Ecran de tablette*/
+/******** TABLETTE *********/
+@media screen and (min-width: 768px) and (max-width: 1124px){ 
     /******** FOOTER *******/
     #footer{
         display: flex;
