@@ -13,12 +13,16 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
 }
+.texte{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
 
 /******************** EN-TÊTE *********************/
 
 /******** TITRE ********/
 .titre{
-    margin-left: 50px;
+    margin: 0px 0px 0px 50px;
 }
 h1{
     font-size: 18px;
@@ -36,8 +40,7 @@ a{
 /******** RECHERCHE ********/
 #recherche{
     align-items: baseline;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 30px 0px 20px 0px;
 }
 .fa-map-marker-alt{ /*Propriété Icons localisation*/
     color: black;
@@ -105,6 +108,7 @@ button {
     margin-right: 20px;
     border: 2px solid #f2f2f2;
     padding-left: 40px;
+    padding: 0px 20px 0px 40px;
     border-radius: 30px;
     font-weight: bold;
     height: 45px;
@@ -115,8 +119,7 @@ button {
     background-color: #DEEBFF;
     position: absolute;
     width: 45px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 0px 15px 0px;
     margin-right: 10px;
     left: -10px;
     border-radius: 50%;
@@ -135,9 +138,7 @@ button {
 }
 .fa-info{
     color: #0065FC;
-    padding: 5px;
-    padding-left:10px;
-    padding-right: 10px;
+    padding: 5px 10px 5px 10px;
     margin-right: 5px;
     border: 2px solid #f2f2f2;
     border-radius: 50%;
@@ -187,8 +188,7 @@ h3{
     border-radius: 15px 15px 0px 0px;
 }
 .hosting-marseille p{
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin: 8px 0px 8px 0px;
 }
 
 /******** AFFICHER PLUS *********/
@@ -214,6 +214,7 @@ h3{
 }
 .fa-chart-line{
     font-size: 20px;
+    padding-right: 10px;
 }
 
 /******** CORPS ASIDE ********/
@@ -252,8 +253,7 @@ h3{
     justify-content: space-between;
 }
 .price{
-    margin-top: 0px;
-    margin-bottom: 35px;
+    margin: 0px 0px 35px 0px;
 }
 
 
@@ -347,15 +347,13 @@ h3{
     #hebergements{
         display: flex;
         flex-direction: column-reverse;
-        margin: 0px;
-        margin-top: 30px;
+        margin: 30px 0px 0px 0px;
     }
 
     /******** ASIDE HEBERGEMENTS *********/
     .popular-hosting{
         border-radius: 0px;
-        padding: 15px;
-        padding-bottom: 30px;
+        padding: 15px 15px 30px 15px;
     }
 
     /******** ARTICLE HEBERGEMENTS *********/
@@ -396,15 +394,13 @@ h3{
     #hebergements{
         display: flex;
         flex-direction: column-reverse;
-        margin: 0px;
-        margin-top: 30px;
+        margin: 30px 0px 0px 0px;
     }
 
     /******** ASIDE HEBERGEMENTS *********/
     .popular-hosting{
         border-radius: 0px;
-        padding: 15px;
-        padding-bottom: 30px;
+        padding: 30px 15px 15px 15px;
     }
 
     /******** ARTICLE HEBERGEMENTS *********/
