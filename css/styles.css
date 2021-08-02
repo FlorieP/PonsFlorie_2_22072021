@@ -275,50 +275,77 @@ h3{
 }
 .activities-block{
     display: flex;
-    height: 540px;
+    justify-content: space-between;
+    height: 460px;
 }
 .activities-block a{
     display: flex;
+}
+.activities-block figure{
+    border-radius: 15px;
+    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    margin-inline: 0px;
+    width: 100%;
 }
 .activities-block img{
     border-radius: 15px 15px 0px 0px;
 }
 .activities-block figcaption{
     margin-left: 20px;
-    height: 12%;
 }
 .activities-block h3{
     margin: 20px 0px 20px 0px;
 }
+.block1, .block2{
+    display: flex;
+    width: 50%;
+}
 .big-block{
     display: flex;
-    flex: 25%;
-}
-.big-block figure{
-    border-radius: 15px;
-    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    margin-right: 30px;
+    flex: 20%;
 }
 .big-block img{
     width: 100%;
-    height: 88%;
+    height: 85%;
     object-fit: cover;
 }
 .little-block{
     display: flex;
-    flex: 25%;
+    flex: 20%;
     flex-direction: column;
-    justify-content: space-between;
-}
-.little-block figure{
-    border-radius: 15px;
-    box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 0px;
 }
 .little-block img{
     width: 100%;
     object-fit: cover;
 }
-
-
+.little1{
+    height: 55%;
+}
+.little1 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+.little2{
+    height: 45%;
+}
+.little2 figure{
+    height: 80%;
+}
+.little2 img{
+    height: 62%;
+    width: 100%;
+    object-fit: cover;
+}
+.separation{
+    margin-right: 30px;
+}
+.flex-end{
+    align-items: flex-end;
+}
 
 
 
@@ -330,6 +357,9 @@ h3{
         max-width: 100%;
     }
     /******** TITRE ********/
+    .titre{
+        margin: 10px 10px 10px 30px;
+    }
     .buttonsearch{
         display: none;
     }
@@ -339,7 +369,10 @@ h3{
     }
 
     /******** FILTRE ********/
-    .filtres li{
+    #filtres, .info{
+        margin-left: 40px;
+    }
+    .buttons{
         margin-bottom: 10px;
     }
 
@@ -361,7 +394,7 @@ h3{
         margin-right: 0px;
         border-radius: 0px;
         background-color: white;
-        padding: 15px;
+        padding: 15px 15px 0px 15px;
     }
     .hosting-block{
         flex-direction: column;
@@ -369,6 +402,36 @@ h3{
     .hosting-block a{
         margin: 10px;
     }
+
+        /******** ACTIVITES ********/
+    #activites{
+        /*margin-right: 10px;*/
+        margin: 0px 30px 10px 30px;
+    }
+    .activities-block{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+    .block1, .block2{
+        flex-direction: column;
+        width: 100%;
+    }
+    .big-block{
+        display: block;
+        width: 100%;
+    }
+    .little-block {
+        flex-direction: column;
+    }
+    .activities-block img{
+        height: 140px;
+    }
+    .separation{
+        margin-right: 0px;
+    }   
+
 }
 
 /******** TABLETTE ********/
@@ -413,6 +476,16 @@ h3{
     .hosting-block a{
         margin: 10px;
         flex: 1 40%;
+    }
+
+    /******** ACTIVITES ********/
+    .activities-block{
+        flex-direction: column;
+        height: 100vw;
+    }
+    .block1, .block2{
+        width: 100%;
+        height: 50%;
     }
 }
 
