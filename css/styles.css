@@ -46,7 +46,6 @@ a{
     color: black;
     background-color: #f2f2f2;
     padding: 15px;
-    padding-top: 14px;
     border: 2px solid #f2f2f2;
     border-radius: 15px 0px 0px 15px;
 }
@@ -71,7 +70,7 @@ a{
 }
 .fa-search{ /*Propriété de l'icon rechercher*/
     color: white;
-    padding: 15px;
+    padding: 17px 17px 16px 17px;
     background-color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 15px

@@ -3,14 +3,13 @@ header{ /*Mise en place de la Flexbox Header*/
     width: 100%; 
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
 
 /********LOGO********/
 #logo{
     margin-left: 20px;
-    padding: 30px;
-    padding-bottom: 20px;
+    padding: 25px 30px 25px 30px;
     flex: 1;
 }
 
@@ -23,18 +22,18 @@ header{ /*Mise en place de la Flexbox Header*/
     align-items: center;
     justify-content: space-around;
     padding-inline-start: 0px;
+    margin-block: 0px;
 }
 #menu li{ 
     position: relative;
-    float: left;
-    padding: 30px 30px 20px 30px;
+    padding: 40px 30px 40px 30px;
     list-style-type: none;
     text-align: center;
-  }
+    height: 100%;
+}
 #menu a{  
-   /* display: inline-block;*/
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
     width: 100%;
     
 }
@@ -45,10 +44,11 @@ header{ /*Mise en place de la Flexbox Header*/
 /********INSCRIPTION********/
 #inscription a{
     display: inline-block;
-	text-decoration: none;
-    padding: 40px 30px 30px 30px;
+    text-decoration: none;
+    padding: 41px 30px 41px 30px;
     color: #0065FC;
     font-weight: bold;
+    margin-right: 20px;
 }
 
 /******************** RESPONSIVE ********************/
@@ -67,29 +67,30 @@ header{ /*Mise en place de la Flexbox Header*/
     }
     #logo{ 
         order: 1;
-        padding-bottom: 5px;
+        padding: 20px 30px 20px 30px;
     }
     #inscription{ 
         order: 2;
         position: absolute;
         width: auto;
-        top: 8px;
-        right: 20px;
+        right: 0px;
         font-size: 16px;
+    }
+    #inscription a{
+        padding:  35px 30px 35px 30px;
     }
     #menu{ 
         order: 3;
         width: 100%;
-    }
-    #menu ul{ /*Soulignement du menu*/
-        border-bottom: 2px #f2f2f2 solid;
+        margin-bottom: 15px;
     }
     #menu li{ /*Mise ne place du menu*/
         display: flex;
         justify-content: center;
         align-items: baseline;
         width: 100%;
-        padding-top: 5px;
+        padding: 25px;
+        border-bottom: 2px #f2f2f2 solid;
     }
     #menu li:hover{ /*Effet au survol*/
         border-bottom: 2px #0065FC solid;
@@ -100,9 +101,8 @@ header{ /*Mise en place de la Flexbox Header*/
 @media screen and (min-width: 768px) and (max-width: 1124px){
     body{
         max-width: 100%;
-
-    /********* HEADER ********/    
     }
+    /********* HEADER ********/    
     #header{
         display: flex;
         flex-direction: column;
@@ -112,29 +112,30 @@ header{ /*Mise en place de la Flexbox Header*/
     }
     #logo{ 
         order: 1;
-        padding-bottom: 5px;
+        padding: 20px 30px 20px 30px;
     }
     #inscription{ 
         order: 2;
         position: absolute;
         width: auto;
-        top: 8px;
-        right: 20px;
+        right: 0px;
         font-size: 16px;
+    }
+    #inscription a{
+        padding:  35px 30px 35px 30px;
     }
     #menu{ 
         order: 3;
         width: 100%;
-    }
-    #menu ul{ /*Soulignement du menu*/
-        border-bottom: 2px #f2f2f2 solid;
+        margin-bottom: 15px;
     }
     #menu li{ /*Mise ne place du menu*/
         display: flex;
         justify-content: center;
         align-items: baseline;
         width: 100%;
-        padding-top: 5px;
+        padding: 25px;
+        border-bottom: 2px #f2f2f2 solid;
     }
     #menu li:hover{ /*Effet au survol*/
         border-bottom: 2px #0065FC solid;
@@ -143,16 +144,23 @@ header{ /*Mise en place de la Flexbox Header*/
 
 /******** TABLETTE PAYSAGE & PC ********/
 @media screen and (min-width: 1125px) and (max-width: 1599px){ 
+
     /******** HEADER *******/
+    #menu li{
+        border-top: transparent 2px solid;
+    }
     #menu li:hover{ 
-    border-top: #0065FC 2px solid;
+        border-top: #0065FC 2px solid;
     }
 }
 
 /******** PC LARGE ********/
 @media screen and (min-width: 1599px){
 
-  /******** HEADER *******/
+/******** HEADER *******/
+    #menu li{
+        border-top: transparent 2px solid;
+    }
     #menu li:hover{ 
         border-top: #0065FC 2px solid;
     }
